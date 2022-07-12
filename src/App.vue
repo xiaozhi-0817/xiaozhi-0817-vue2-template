@@ -5,7 +5,7 @@
 </template>
 
 <style lang="less">
-@import url("./assets/reset.css");
+@import url("./assets/styles/reset.css");
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

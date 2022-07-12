@@ -17,10 +17,17 @@ module.exports = {
         // },
         disableHostCheck: true // 内网穿透
     },
-
     // publicPath: './',  //部署应用包时的基本 URL。用法和 webpack 本身的 output.publicPath 一致
     // outputDir: 'travel', //打包路径地址,Default: 'dist' ,代替 output.path
     // assetsDir: 'assets', //放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目  
-
+    resolve: {
+        extensions: ['.js', '.vue', '.json'],
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js',
+            '@': resolve('src'),
+            'styles': resolve('src/assets/styles'),
+            //   'common': resolve('src/common'),
+        }
+    },
 }
 
