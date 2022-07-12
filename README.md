@@ -1,4 +1,4 @@
-# demo
+# 这是一个基于vue2的一个封装模板，里面包含了axios
 
 ## Project setup
 ```
