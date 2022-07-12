@@ -7,8 +7,8 @@ import { getLogin } from "../api/api";
 export default {
   data() {
     return {
-      input: "15191895640",
-      pwd: "123456",
+      input: "admin",
+      pwd: "admin123",
     };
   },
   created() {
@@ -17,8 +17,8 @@ export default {
   methods: {
     submit() {
       let params = {};
-      params.account = this.input;
-      params.pwd = this.pwd;
+      params.username = this.input;
+      params.password = this.pwd;
       getLogin(params).then((res) => {
         console.log(res);
         // sessionStorage.setItem("user", JSON.stringify(res.data));
